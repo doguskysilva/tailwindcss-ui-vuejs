@@ -4,8 +4,13 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Home",
-    component: () => import(/* webpackChunkName: "heom" */ "../views/Home.vue")
-  }
+    component: () => import(/* webpackChunkName: "home" */ "../views/Home.vue")
+  },
+  {
+    path: "/page-sections/angled-image",
+    name: "PageSectionAngledImage",
+    component: () => import(/* webpackChunkName: "page-section_angled-image" */ "../views/page-sections/AngledImage.vue")
+  },
 ];
 
 const router = createRouter({
